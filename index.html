@@ -17,6 +17,7 @@
         <nav class="navbar">
             <div class="container">
                 <h1 class="logo">Nitin Rajput</h1>
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
                 <ul class="navbar-list">
                     <li><a href="index.html" class="navbar-link">Home</a></li>
                     <li><a href="project.html" class="navbar-link">Projects</a></li>
@@ -173,6 +174,12 @@
             <li><a href="https://github.com/mainnitinhoon" target="_blank">GitHub</a></li>
         </ul>
     </footer>
+    <script>
+  function toggleMenu() {
+    const navList = document.querySelector('.navbar-list');
+    navList.classList.toggle('show');
+  }
+    </script>
     
 </body>
 </html>
